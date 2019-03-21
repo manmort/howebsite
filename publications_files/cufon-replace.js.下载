@@ -1,0 +1,2 @@
+Cufon.replace('h3', { fontFamily: 'DIN' });
+Cufon.replace('h2', { fontFamily: 'DIN' })
