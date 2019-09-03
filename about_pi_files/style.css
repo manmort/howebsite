@@ -1,4 +1,4 @@
-﻿/* CSS Document */
+/* CSS Document */
 * {
 	margin: 0;
 	padding: 0;
@@ -6,12 +6,14 @@
 	line-height: normal;
 	letter-spacing: normal;
 	vertical-align: baseline;
-	color: #000000;
+	/* color: #000000; */
 }
 html, body { height:100%; }
 body {font-size:100%; line-height:1.25em; background:url(images/bg.gif) top left repeat-x}
-html, input, textarea	{	font-family: Arial, Helvetica, sans-serif; 
-		color:#a7a7a7;	}	
+html, input, textarea	{
+		font-family: Arial, Helvetica, sans-serif;
+		color: #a7a7a7;
+		}	
 
 .alignMiddle{ vertical-align:middle}
 .alignCenter{ text-align: center}
@@ -71,6 +73,30 @@ a:hover{text-decoration:none}
 #header .link1{color:#777475; line-height:1.2em; letter-spacing:-1px; font-size:2.25em; text-decoration:none; border-bottom:1px solid #777475}
 #header .link1:hover{text-decoration:none; border-bottom:none}
 
+ul.main {padding:0;margin:0;list-style: aqua;position: sticky;top: 0px;left:0;width:100%;min-height: 40px;background: #287d9a;text-align: center;z-index:100002;box-shadow:0 3px 6px rgba(0,0,0,0.3);backface-visibility: hidden;}
+ul.main li {display:inline-block;}
+ul.main li {*display:inline;}
+ul.main li.break {display:block; display:none;}
+ul.main li a {display:block;font: normal 15px/20px 'latomedium', arial, sans-serif;color: #ffffff;text-decoration:none;padding: 10px;/* border-bottom:4px solid #000; */}
+
+ul.main li a.active {
+    background-color: #a0775f;
+    color: #1ebc42;
+}
+
+ul.main li a:hover {
+    background-color: #94cde1;
+    color: #161515;
+}
+.home ul.main li#home a {border-color:#09c;}
+.demos ul.main li#demos a {border-color:#e23b2d;}
+.menus ul.main li#menus a {border-color:#ea851d;}
+.layouts ul.main li#layouts a {border-color:#ffc20f;}
+.boxes ul.main li#boxes a {border-color:#7cb447;}
+.mozilla ul.main li#mozilla a {border-color:#1672bb;}
+.explorer ul.main li#explorer a {border-color:#8b37aa;}
+.opacity ul.main li#opacity a {border-color:#9e6ba9;}
+
 /*content*/
 #content{
 	font-size:0.7625em;
@@ -89,6 +115,7 @@ a:hover{text-decoration:none}
 	color: #000000;
 	font-size: small;
 	margin-bottom: 0;
+	/* text-shadow: 0px 6px black; */
 }
 #content .p{ margin:0}
 #content .p1{ margin:0 0 21px 0}
